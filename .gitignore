@@ -2,7 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/sass,webstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=sass,webstorm
 commit.txt
-.idea
+.idea/
 ### Sass ###
 .sass-cache/
 *.css.map

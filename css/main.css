@@ -1,0 +1,618 @@
+body {
+  font-family: vazir, tahoma, sans-serif;
+}
+
+button, input {
+  outline: none !important;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow2 {
+  box-shadow: 0 3px 15px rgba(70, 72, 77, 0.08);
+}
+
+.box-shadow3 {
+  box-shadow: 0 5px 30px rgba(51, 105, 158, 0.09);
+}
+
+.transition {
+  transition: all 0.7s ease;
+}
+
+.bg-darker {
+  background-color: #2b2d30;
+}
+
+.bg-blur {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.light-bg {
+  background-color: #f6f7fa;
+}
+
+.dark-bg {
+  background-color: #35373a;
+}
+
+/*==========  nav section styling  ==========*/
+nav {
+  min-height: 8vh;
+}
+
+.mylead {
+  line-height: 1.7;
+  color: #76777a;
+}
+
+.btn-heading {
+  width: 130px;
+  font-size: 17px;
+}
+
+nav ul {
+  width: 30%;
+  max-height: 92vh;
+}
+
+.nav-icons {
+  font-size: 17px;
+  margin-right: 7px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+nav ul li {
+  min-width: 70px;
+  transition: all ease 0.3s;
+}
+
+nav a,
+nav li {
+  color: #343a40;
+  transition: all 0.1s ease;
+}
+nav a:hover,
+nav li:hover {
+  color: #fe3e64 !important;
+}
+
+.bars {
+  font-size: 23px;
+}
+
+#log-in {
+  font-size: 16px;
+}
+
+#sign-up {
+  background-color: #fe3e64;
+  border-radius: 17px;
+  padding: 4px 16px;
+  min-width: 90px;
+}
+#sign-up:hover {
+  color: #fff !important;
+  background-color: #e91e46;
+}
+
+a:hover .angle-dark {
+  color: #fe3e64;
+}
+
+.shopping-cart {
+  font-size: 17px;
+}
+
+#search-input {
+  height: 32px !important;
+}
+#search-input:focus {
+  border-color: #999999;
+}
+
+#search-input-phone {
+  display: none;
+  padding: 0;
+  position: absolute;
+  left: 0px;
+  border-radius: 0 !important;
+  right: 0px;
+  border: 0;
+  min-height: 8vh;
+  max-width: 100%;
+  padding-right: 10%;
+}
+
+#btn-search-close {
+  z-index: 9999;
+  display: none;
+  color: #545b62;
+  font-size: 18px !important;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+#search-btn {
+  background-color: #fe3e64;
+  display: flex;
+  color: #fff;
+  height: 30px;
+}
+#search-btn:hover {
+  color: #fff;
+}
+#search-btn:active {
+  box-shadow: 0;
+}
+
+#user {
+  background-color: #fe3e64;
+  color: #fff;
+  height: 26px !important;
+  width: 28px !important;
+}
+#user:hover {
+  color: #fff;
+}
+#user:active {
+  box-shadow: 0;
+}
+
+.burger {
+  z-index: 7;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #5a5a5a;
+}
+
+.nav {
+  min-width: 100% !important;
+}
+
+/*==========  dropdown  ==========*/
+.nav-menu {
+  opacity: 0;
+  display: flex;
+  transition: all ease 0.5s;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 7px;
+  top: 10%;
+  min-width: 55vw;
+  min-height: 30vh;
+  left: 20%;
+  z-index: -1;
+}
+.nav-menu a {
+  color: #76777a;
+  text-decoration: none;
+}
+.nav-menu a:hover {
+  color: #e91e46 !important;
+}
+
+/*==========  Login/Sign in  ==========*/
+.show-login-signin {
+  opacity: 1 !important;
+  top: 50% !important;
+}
+
+.hide-login-signin {
+  opacity: 0 !important;
+  top: 55% !important;
+}
+
+#login-close-btn {
+  font-size: 24px !important;
+  top: 15px;
+  cursor: pointer;
+  right: 25px;
+  position: absolute;
+}
+
+#login-signin {
+  transition: all ease 0.5s;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  min-width: 50vw;
+  min-height: 30vh;
+  z-index: 7;
+}
+#login-signin .form {
+  padding: 2rem 3rem;
+}
+#login-signin .myform-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+#login-signin .myform-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+#login-signin .myform-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+#login-signin .myform-control input:focus {
+  border-color: #777;
+}
+#login-signin .success input {
+  border-color: #2ecc71;
+}
+#login-signin .error input {
+  border-color: #e74c3c;
+}
+#login-signin .error small {
+  visibility: visible;
+}
+#login-signin small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+#login-signin button {
+  background-color: #fe3e64;
+  cursor: pointer;
+  border: 2px solid #fe3e64;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.transform {
+  transform: rotate(180deg);
+}
+
+/*==========  header section styling  ==========*/
+.bg-blur {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.p-header {
+  max-width: 65vw;
+}
+
+.glories {
+  height: 7.5rem;
+  border-radius: 14px !important;
+}
+
+/*==========  train/course section styling  ==========*/
+.train-img {
+  background-image: url(../img/card2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.train-img:nth-child(1) {
+  background-image: url(../img/train1.jpg);
+}
+
+.train-img:nth-child(2) {
+  background-image: url(../img/train2.jpg);
+}
+
+.train-img:nth-child(3) {
+  background-image: url(../img/train3.jpg);
+}
+
+.train-img:nth-child(4) {
+  background-image: url(../img/train4.jpg);
+}
+
+/*==========  4-main-service img/link section  ==========*/
+.card-mw-train {
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.card-mw-train:hover {
+  transform: translateY(-5px);
+}
+
+/*==========  free books section  ==========*/
+/*==========  service introduction section  ==========*/
+.service-cards {
+  border-radius: 4px;
+  border: 0.1px solid #d3d3d3;
+}
+
+/*==========  company logo icons section  ==========*/
+.logos {
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*==========  coustomer opnions section  ==========*/
+/*==========  articles section  ==========*/
+.article-subject {
+  font-size: 14px;
+}
+
+/*==========  footer section  ==========*/
+footer .img-bottom-logo {
+  width: 36px;
+  max-width: 100%;
+  max-height: 100%;
+}
+footer h6 {
+  font-size: 16px;
+}
+footer p {
+  font-size: 15px;
+  color: #9c9c9c !important;
+  margin: 13px 0;
+}
+footer .p-footer-mt {
+  margin-top: 60px !important;
+}
+footer .newsletter {
+  height: 35px;
+  position: absolute;
+  left: 15px;
+  bottom: 107px;
+  width: 248px;
+  font-size: 13px;
+}
+footer .newsletter button {
+  position: absolute;
+  z-index: 999;
+  left: 0px;
+  bottom: 0px;
+  height: 35px;
+  border: none;
+  background-color: #fe3e64;
+  color: white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 60px;
+}
+footer input {
+  font-size: 14px !important;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 0 10px 15px;
+  text-transform: uppercase;
+}
+
+.social-media-icons {
+  color: #fff;
+  transition: color ease 0.2s;
+}
+.social-media-icons:hover {
+  color: #e91e46;
+}
+
+/*==========  common styling like btn/icons...  ==========*/
+a {
+  text-decoration: none !important;
+}
+
+.border-radius {
+  border-radius: 5px;
+}
+
+.opacity {
+  opacity: 1 !important;
+}
+
+.zindexPos {
+  z-index: 999 !important;
+}
+
+.zindexNeg {
+  z-index: -999 !important;
+}
+
+.btn-defualt-red {
+  background-color: #fe3e64;
+}
+.btn-defualt-red:hover {
+  background-color: #e91e46 !important;
+}
+
+.btn-header1 {
+  background-color: #6d6d6d;
+}
+
+.btn-contact {
+  background-color: #46484d;
+  border: 1px solid #46484d;
+}
+.btn-contact:hover {
+  background-color: #fe3e64;
+  border: 1px solid #fe3e64;
+}
+
+.star-icons {
+  font-size: 15px;
+  color: #fe3e64;
+}
+
+body {
+  transition: all ease 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*==========  Media Queries ==========*/
+/*max-width: 339px*/
+@media screen and (max-width: 339px) {
+  .a-heading-logo {
+    display: none !important;
+  }
+
+  #img-logo {
+    margin-right: 1.2rem;
+  }
+
+  h3.login-header {
+    font-size: 14px !important;
+  }
+}
+/*max-width: 475px*/
+@media screen and (max-width: 575px) {
+  #user {
+    margin-right: -85px !important;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 475px) {
+  #heading-logo {
+    font-size: 17px;
+  }
+}
+/*max-width: 768px*/
+@media screen and (max-width: 767px) {
+  h3.login-header {
+    font-size: 18px;
+  }
+}
+/*max-width: 991px*/
+@media screen and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .card-mw-course {
+    min-width: 50%;
+    margin: auto;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    height: 91.8vh;
+    top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background-color: #fcfcfc;
+    color: #000;
+    max-width: 260px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  #search-btn {
+    background-color: #fe3e64;
+    color: #fff;
+    height: 26px !important;
+    width: 28px !important;
+  }
+  #search-btn:hover {
+    color: #fff;
+  }
+}
+/*max-width: 1199px and min-width:992px)*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .service-cards {
+    min-height: 130px;
+  }
+}
+/*max-width: 1300px and min-width:992px)*/
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  .nav-links {
+    width: 80%;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide p {
+  font-size: 17px;
+}
+.swiper-slide .opinion {
+  max-width: 650px;
+  text-align: center;
+  font-size: 18px;
+}
+.swiper-slide h5 {
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=main.css.map */

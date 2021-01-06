@@ -1,0 +1,52 @@
+body {
+  font-family: vazir, tahoma, sans-serif;
+}
+button,input{
+  outline: none !important;
+
+}
+// Colors
+
+$angle-dark: rgb(90, 90, 90);
+$default-red: #fe3e64;
+$default-red-hover: #e91e46;
+$default-dark: #6d6d6d;
+$default-gray:#76777a;
+$bg-dark: #35373a;
+$bg-light: #f6f7fa;
+$bg-secondary: #46484d;
+$success-color:#2ecc71;
+$error-color:#e74c3c;
+
+// custom styles
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow2 {
+  box-shadow: 0 3px 15px rgba(70, 72, 77, 0.08);
+}
+
+.box-shadow3 {
+  box-shadow: 0 5px 30px rgba(51, 105, 158, 0.09);
+}
+
+.transition {
+  transition: all .7s ease;
+}
+
+.bg-darker {
+  background-color: #2b2d30;
+}
+
+.bg-blur {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.light-bg {
+  background-color: $bg-light;
+}
+
+.dark-bg {
+  background-color: $bg-dark;
+}

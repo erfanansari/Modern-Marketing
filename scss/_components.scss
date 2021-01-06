@@ -1,0 +1,463 @@
+/*==========  nav section styling  ==========*/
+
+nav {
+  min-height: 8vh;
+}
+
+.mylead {
+  line-height: 1.7;
+  color: $default-gray;
+}
+
+.btn-heading {
+  width: 130px;
+  font-size: 17px;
+}
+
+nav ul {
+  width: 30%;
+  max-height: 92vh;
+}
+
+.nav-icons {
+  font-size: 17px;
+  margin-right: 7px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+nav ul li {
+  min-width: 70px;
+  transition: all ease 0.3s;
+}
+
+nav a,
+nav li {
+  color: #343a40;
+  transition: all 0.1s ease;
+
+  &:hover {
+    color: $default-red !important;
+  }
+}
+
+.bars {
+  font-size: 23px;
+}
+
+#log-in {
+  font-size: 16px;
+}
+
+#sign-up {
+  background-color: $default-red;
+  border-radius: 17px;
+  padding: 4px 16px;
+  min-width: 90px;
+
+  &:hover {
+    color: #fff !important;
+    background-color: $default-red-hover;
+  }
+}
+
+a:hover {
+  .angle-dark {
+    color: $default-red;
+  }
+}
+
+.shopping-cart {
+  font-size: 17px;
+}
+
+#search-input {
+  height: 32px !important;
+
+  &:focus {
+    border-color: #999999;
+  }
+}
+
+#search-input-phone {
+  display: none;
+  padding: 0;
+  //margin:auto;
+  position: absolute;
+  left: 0px;
+  border-radius: 0 !important;
+  right: 0px;
+  border: 0;
+  min-height: 8vh;
+  max-width: 100%;
+  padding-right: 10%;
+}
+
+#btn-search-close {
+  z-index: 9999;
+  //position: absolute;
+  display: none;
+  color: #545b62;
+  font-size: 18px !important;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+#search-btn {
+  background-color: $default-red;
+  display: flex;
+  color: #fff;
+  height: 30px;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    box-shadow: 0;
+  }
+}
+
+#user {
+  background-color: $default-red;
+  color: #fff;
+  height: 26px !important;
+  width: 28px !important;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    box-shadow: 0;
+  }
+}
+.burger{
+  z-index: 7;
+
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(90, 90, 90);
+}
+
+.nav {
+  min-width: 100% !important;
+}
+
+/*==========  dropdown  ==========*/
+
+.nav-menu{
+  //display: none;
+  opacity: 0;
+  display: flex;
+  transition: all ease .5s;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 7px;
+  top: 10%;
+  min-width: 55vw;
+  min-height: 30vh;
+  left:20%;
+  z-index: -1;
+  a{
+    color: $default-gray;
+    text-decoration: none;
+    &:hover{
+      color:$default-red-hover !important;
+    }
+  }
+}
+
+/*==========  Login/Sign in  ==========*/
+
+.show-login-signin{
+  opacity: 1 !important;
+  top: 50% !important;
+}
+.hide-login-signin{
+  opacity: 0 !important;
+  top: 55% !important;
+}
+
+#login-close-btn{
+  font-size: 24px !important;
+  top:15px;
+  cursor: pointer;
+  right:25px;
+  position: absolute;
+}
+#login-signin{
+  transition: all ease 0.5s;
+  //z-index: -999 !important;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  min-width: 50vw;
+  min-height: 30vh;
+  z-index: 7;
+  .form{
+    padding: 2rem 3rem;
+  }
+  .myform-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    label{
+      color:#777;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input{
+      border:2px solid #f0f0f0;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      &:focus{
+        border-color: #777;
+      }
+    }
+
+  }
+  .success input{
+    border-color: $success-color;
+  }
+  .error input{
+    border-color: $error-color;
+  }
+  .error small{
+    visibility: visible;
+  }
+  small{
+    color: $error-color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+  }
+  button{
+    background-color: $default-red;
+    cursor: pointer;
+    border: 2px solid $default-red;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.transform{
+  transform: rotate(180deg);
+}
+/*==========  header section styling  ==========*/
+.bg-blur {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.p-header {
+  max-width: 65vw;
+}
+.glories{
+  height: 7.5rem;
+  border-radius: 14px !important;
+}
+/*==========  train/course section styling  ==========*/
+
+.train-img {
+  background-image: url(../img/card2.jpg);
+  // background: rgba(0,0,0,0.4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.train-img:nth-child(1) {
+  background-image: url(../img/train1.jpg);
+}
+
+.train-img:nth-child(2) {
+  background-image: url(../img/train2.jpg);
+}
+
+.train-img:nth-child(3) {
+  background-image: url(../img/train3.jpg);
+}
+
+.train-img:nth-child(4) {
+  background-image: url(../img/train4.jpg);
+}
+
+/*==========  4-main-service img/link section  ==========*/
+
+.card-mw-train {
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.card-mw-train:hover {
+  transform: translateY(-5px);
+}
+
+/*==========  free books section  ==========*/
+
+/*==========  service introduction section  ==========*/
+
+.service-cards {
+  border-radius: 4px;
+  border: 0.1px solid #d3d3d3;
+  // min-height:110px ;
+}
+
+/*==========  company logo icons section  ==========*/
+
+.logos {
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*==========  coustomer opnions section  ==========*/
+
+/*==========  articles section  ==========*/
+
+.article-subject {
+  font-size: 14px;
+}
+
+/*==========  footer section  ==========*/
+
+footer {
+  .img-bottom-logo {
+    width: 36px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #9c9c9c !important;
+    margin: 13px 0;
+  }
+
+  .p-footer-mt {
+    margin-top: 60px !important;
+  }
+
+  .newsletter {
+    height: 35px;
+    position: absolute;
+    left: 15px;
+    bottom: 107px;
+    width: 248px;
+    font-size: 13px;
+
+    button {
+      position: absolute;
+      z-index: 999;
+      left: 0px;
+      bottom: 0px;
+      height: 35px;
+      border: none;
+      background-color: $default-red;
+      color: white;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 60px;
+    }
+  }
+
+  input {
+    font-size: 14px !important;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 0 10px 15px;
+    text-transform: uppercase;
+  }
+}
+
+.social-media-icons {
+  color: #fff;
+  transition: color ease 0.2s;
+
+  &:hover {
+    color: $default-red-hover;
+  }
+}
+
+/*==========  common styling like btn/icons...  ==========*/
+a{
+  text-decoration: none !important;
+}
+.border-radius{
+  border-radius: 5px;
+}
+.opacity{
+  opacity: 1 !important;
+}
+.zindexPos{
+  z-index: 999 !important;
+}
+.zindexNeg{
+  z-index: -999 !important;
+}
+.btn-defualt-red {
+  background-color: $default-red;
+
+  &:hover {
+    background-color: $default-red-hover !important;
+  }
+}
+
+.btn-header1 {
+  background-color: $default-dark;
+}
+
+.btn-contact {
+  background-color: $bg-secondary;
+  border: 1px solid $bg-secondary;
+
+  &:hover {
+    background-color: $default-red;
+    border: 1px solid $default-red;
+  }
+}
+
+.star-icons {
+  font-size: 15px;
+  color: $default-red;
+}

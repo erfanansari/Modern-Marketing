@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>مدرن مارکتینگ</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/frameworks and libraries/bootstrap.css"/>
+    <link rel="stylesheet" href="css/frameworks and libraries/bootstrap-rtl.css"/>
+    <!-- Carousel -->
+    <link rel="stylesheet" href="css/frameworks and libraries/swiper-bundle.min.css"/>
+    <!-- fontawesome-->
+    <script src="js/all.js"></script>
+    <!-- Fonts-->
+    <link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css"/>
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- logo icon -->
+    <link rel="icon" href="img/logo.png"/>
+</head>
+<body>
+<div class="overlay hidden"></div>
+<header>
+    <nav class="d-flex justify-content-around align-items-center box-shadow">
+        <div class="rightside d-flex ml-lg-1">
+            <div id="logo" class="d-flex align-items-center mr-1 mr-xl-0" style="width: 255px">
+                <a href="#">
+                    <img src="img/logo.png" class="img-fluid" id="img-logo" width="37" alt="modern-marketing"/>
+                </a>
+                <a href="#" class="mr-2 a-heading-logo mt-1 ">
+                    <h5 id="heading-logo"><a href="index.html">مدرن مارکتینگ</a></h5>
+                </a>
+            </div>
+            <ul class="nav-links list-unstyled d-flex w-100 mr-lg-2 mr-xl-4 my-2 justify-content-around">
+                <li class="d-lg-none">
+                    <a href="#" class=" mx-1 mx-xl-2"><i class="far fa-shopping-cart"></i> سبد خرید</a>
+                </li>
+                <li>
+                    <a href="#" id="services" class=" mx-1 mr-3 mr-lg-0 mx-xl-2"
+                    >خدمات <span><i id="servicesarrow" class=" d-none  d-lg-inline fa fa-angle-down"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" mx-1 mx-xl-2">آکادمی</a>
+                </li>
+                <li>
+                    <a href="#" class=" mx-1 mx-xl-2">طراحی سایت</a>
+                </li>
+                <li>
+                    <a href="#" class=" mx-1 mx-xl-2">تولید محتوا</a>
+                </li>
+                <li>
+                    <a href="#" class=" mx-1 mx-xl-2">نمونه کار ها</a>
+                </li>
+                <li class="d-none d-xl-block">
+                    <a href="#" class=" mx-1 mx-xl-2">درباره ما</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="leftside d-flex mr-lg-1 mr-xl-5 d-flex align-items-center">
+            <!--          <input class="form-control" type="search">-->
+            <input id="search-input" class="form-control ml-2 d-none d-lg-block shadow-none" type="search" name=""
+                   placeholder="جستجو"/>
+            <input id="search-input-phone" class="form-control shadow-none" type="search" name="" placeholder="جستجو"/>
+            <button id="btn-search-close" class="btn p-0 m-0 shadow-none">
+                <i class="fa fa-times"></i>
+            </button>
+            <button id="search-btn"
+                    class="btn btn-danger p-0 m-0 mr-n5 mr-sm-0 ml-5 ml-sm-0 mb-1 mb-lg-0 align-items-center justify-content-center">
+                <i class="fa fa-search d-md-block mx-2"></i>
+            </button>
+            <button id="user"
+                    class="btn d-lg-none p-0 mb-1 d-flex align-items-center justify-content-center mx-2 shadow-none">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </button>
+            <!-- <span class="nav-icons  mt-1"><i class="fa fa-phone mx-2"></i></span> -->
+            <a href="#" class="mx-2 mb-1 mb-lg-0 shopping-cart"><i
+                    class="fa fa-shopping-cart d-none d-md-block mx-2"></i></a>
+            <!--          <span class="nav-icons my-1 ml-3 ml-lg-0"><i class="fa fa-user d d-lg-none"></i></span>-->
+            <!--            <a href="#" class="t d-none d-lg-block  ml-3 my-1" id="log-in">ورود</a>-->
+            <a href="#" class="d-none d-lg-block btn btn-danger text-light ml-2" id="sign-up">ورود</a>
+            <span class="nav-icons mr-n5 mr-sm-0 bars burger d-lg-none"><i class="far fa-bars"></i></span>
+        </div>
+    </nav>
+
+
+    <div class="nav-menu box-shadow  align-items-center justify-content-center">
+        <div class="d-flex ">
+            <div class="d-flex flex-column mx-4">
+                <div class="d-flex align-items-center">
+                    <h5><i class="fab fa-instagram" aria-hidden="true"></i> اینستاگرام</h5>
+                </div>
+                <hr class="w-100 my-2">
+                <ul class="list-unstyled mt-1">
+                    <li><a href="">تبلیغات ساعتی</a></li>
+                    <li><a href="">تبلیغات بازدیدی</a></li>
+                    <li><a href="">تبلیغات اسپانسرشیپ</a></li>
+                    <li><a href="">اینفلونسر مارکتینگ</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column mx-4">
+                <div class="d-flex align-items-center">
+                    <h5><i class="fab fa-instagram" aria-hidden="true"></i> اینستاگرام</h5>
+                </div>
+                <hr class="w-100 my-2">
+                <ul class="list-unstyled mt-1">
+                    <li><a href="">تبلیغات ساعتی</a></li>
+                    <li><a href="">تبلیغات بازدیدی</a></li>
+                    <li><a href="">تبلیغات اسپانسرشیپ</a></li>
+                    <li><a href="">اینفلونسر مارکتینگ</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column mx-4">
+                <div class="d-flex align-items-center">
+                    <h5><i class="fab fa-instagram" aria-hidden="true"></i> اینستاگرام</h5>
+                </div>
+                <hr class="w-100 my-2">
+                <ul class="list-unstyled mt-1">
+                    <li><a href="">تبلیغات ساعتی</a></li>
+                    <li><a href="">تبلیغات بازدیدی</a></li>
+                    <li><a href="">تبلیغات اسپانسرشیپ</a></li>
+                    <li><a href="">اینفلونسر مارکتینگ</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column mx-4">
+                <div class="d-flex align-items-center">
+                    <h5><i class="fab fa-instagram" aria-hidden="true"></i> اینستاگرام</h5>
+                </div>
+                <hr class="w-100 my-2">
+                <ul class="list-unstyled mt-1">
+                    <li><a href="">تبلیغات ساعتی</a></li>
+                    <li><a href="">تبلیغات بازدیدی</a></li>
+                    <li><a href="">تبلیغات اسپانسرشیپ</a></li>
+                    <li><a href="">اینفلونسر مارکتینگ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--========== Login/Sign in ==========--->
+    <div id="login-signin" class="zindexNeg">
+        <div>
+            <div>
+                <form id="form" class="form">
+                    <h3 class="text-center login-header">ورود به مدرن مارکتینگ</h3>
+                    <div>
+                        <a id="login-close-btn"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="d-flex mb-3 h-25">
+                        <button type="button" id="login-btn" class="bg-white text-dark mx-1">ورود</button>
+                        <button type="button" id="sigin-btn" class="bg-white text-dark mx-1">عضویت</button>
+                    </div>
+                    <div class="login">
+                        <div class="myform-control" dir="ltr">
+                            <label for="email-or-phone">پست الکترونیکی یا شماره موبایل</label>
+                            <input type="text" id="email-or-phone" placeholder="091000000"/>
+                            <small class="form-small">Error message</small>
+                        </div>
+
+                        <div class="myform-control">
+                            <label for="password">رمز عبور</label>
+                            <input type="password" id="password"/>
+                            <small class="form-small">Error message</small>
+                        </div>
+                    </div>
+
+
+                    <div class="signin hidden">
+                        <div class="myform-control">
+                            <label for="username">نام و نام خانوادگی</label>
+                            <input type="text" id="username" placeholder="مثال: حسین کیانفر"/>
+                            <small class="form-small">Error message</small>
+                        </div>
+                        <div class="myform-control" dir="ltr">
+                            <label for="signin-phone">شماره موبایل</label>
+                            <input type="text" id="signin-phone" placeholder="091000000"/>
+                            <small class="form-small">Error message</small>
+                        </div>
+                        <div class="myform-control" dir="ltr">
+                            <label for="email">پست الکترونیکی</label>
+                            <input type="text" id="email" placeholder="test@gmail.com"/>
+                            <small class="form-small">Error message</small>
+                        </div>
+                        <div class="myform-control">
+                            <label for="signin-password">رمز عبور</label>
+                            <input type="password" id="signin-password"/>
+                            <small class="form-small">Error message</small>
+                        </div>
+                    </div>
+
+                    <button type="submit">عضویت</button>
+                </form>
+            </div>
+
+
+            <div class="d-none">
+                <div class="form-control">
+                    <form action="" id="signin-form"></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==========  header section ==========--->
+
+    <div class="section my-4 text-center text-lg-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h2 class="my-3 mt-5 mb-4">آموزش و خدمات دیجیتال مارکتینگ</h2>
+                        <p class="my-4 lead mylead p-header text-center mx-auto text-lg-right">
+                            کسب و کار شما می‌تواند رشد کند. درآمد شما می‌تواند چند برابر شود. فقط کافی است مسیر درست را
+                            بشناسید. کافی است مشتریان خود را در زمان درست، مکان درست و به روش درست هدف قرار دهید. ما در
+                            این مسیر همراه شما
+                            هستیم.
+                        </p>
+                        <div>
+                            <button id="btn-header1" class="btn btn-sm-block my-1 my-sm-0 btn-lg btn-secondary"><a
+                                    class="text-white "
+                                    href="services.html">خدمات
+                                بازاریابی</a>
+                            </button>
+                            <button id="btn-header2"
+                                    class="btn btn-sm-block my-1 my-sm-0 btn-lg btn-danger mr-1 mr-lg-2 btn-defualt-red">
+                                <a href="" class="text-white ">آموزش بازاریابی</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 my-5">
+                    <img src="img/header-bg.jpg" class="img-fluid d-none d-lg-block" alt="header"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+    <!--==========  courses section  ==========--->
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- course-title/btn -->
+
+            <div class="container">
+                <div class="heading d-flex justify-content-between flex-column text-center flex-lg-row text-lg-right mt-5 mb-4">
+                    <div>
+                        <h4>آموزش بازاریابی دیجیتال</h4>
+                        <p class="mylead">رشد شما با یادگیری اغاز می شود</p>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-danger btn-heading btn-defualt-red">تمامی دوره ها</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- courses -->
+
+            <div class="col-12 col-md-4 card-mw-course">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top img-fluid" src="img/card1.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="text-center mb-2">ساخت کسب و کار اینترنتی موفق</h5>
+                        <div class="d-flex justify-content-between">
+                            <div class="my-1">
+                                <blockquote>اردوخانی</blockquote>
+                            </div>
+                            <div>
+                                <div class="text-left ml-2 my-2 star-icons">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text text-right mylead">چگونه می‌توانید یک کسب‌وکار اینترنتی راه‌اندازی کنید که
+                            موفقیت آن حتمی باشد؟ در این کتاب، همه‌چیز را به شما خواهیم گفت.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="mt-2">
+                                <i class="far fa-clock text-muted"></i>
+                                <small class="text-muted mr-1">9 ساعت</small>
+                            </div>
+                            <div class="mt-2">
+                                <blockquote class="mylead mb-0">890,000 تومان</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 card-mw-course">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="img/card2.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="text-center mb-2">ساخت کسب و کار اینترنتی موفق</h5>
+                        <div class="d-flex justify-content-between">
+                            <div class="my-1">
+                                <blockquote>اردوخانی</blockquote>
+                            </div>
+                            <div>
+                                <div class="text-left ml-2 my-2 star-icons">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text text-right mylead">چگونه می‌توانید یک کسب‌وکار اینترنتی راه‌اندازی کنید که
+                            موفقیت آن حتمی باشد؟ در این کتاب، همه‌چیز را به شما خواهیم گفت.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="mt-2">
+                                <i class="far fa-clock text-muted"></i>
+                                <small class="text-muted mr-1">9 ساعت</small>
+                            </div>
+                            <div class="mt-2">
+                                <blockquote class="mylead mb-0">890,000 تومان</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 card-mw-course">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="img/card3.jpg" alt="Card image cap"/>
+                    <div class="card-body">
+                        <h5 class="text-center mb-2">ساخت کسب و کار اینترنتی موفق</h5>
+                        <div class="d-flex justify-content-between">
+                            <div class="my-1">
+                                <blockquote>اردوخانی</blockquote>
+                            </div>
+                            <div>
+                                <div class="text-left ml-2 my-2 star-icons">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text text-right mylead">چگونه می‌توانید یک کسب‌وکار اینترنتی راه‌اندازی کنید که
+                            موفقیت آن حتمی باشد؟ در این کتاب، همه‌چیز را به شما خواهیم گفت.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="mt-2">
+                                <i class="far fa-clock text-muted"></i>
+                                <small class="text-muted mr-1">9 ساعت</small>
+                            </div>
+                            <div class="mt-2">
+                                <blockquote class="mylead mb-0">890,000 تومان</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  4-main-service img/link section  ==========--->
+
+    <div class="container my-5">
+        <div class="card-deck">
+            <div class="card text-white mb-3 train-img py-3 card-mw-train box-shadow2">
+                <div class="py-4">
+                    <a href="" class="text-white "><h5 class="text-center my-0">آموزش اصول
+                        بازاریابی</h5></a>
+                </div>
+            </div>
+            <div class="card text-white mb-3 train-img py-3 card-mw-train box-shadow2">
+                <div class="py-4">
+                    <a href="" class="text-white "><h5 class="text-center my-0">آموزش اصول
+                        بازاریابی</h5></a>
+                </div>
+            </div>
+            <div class="card text-white mb-3 train-img py-3 card-mw-train box-shadow2">
+                <div class="py-4">
+                    <a href="" class="text-white "><h5 class="text-center my-0">آموزش اصول
+                        بازاریابی</h5></a>
+                </div>
+            </div>
+            <div class="card text-white mb-3 train-img py-3 card-mw-train box-shadow2">
+                <div class="py-4">
+                    <a href="" class="text-white "><h5 class="text-center my-0">آموزش اصول
+                        بازاریابی</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  free books section  ==========--->
+
+    <div class="container my-5 bg-white px-4">
+        <div class="row box-shadow3">
+            <div class="col-lg-4 my-2 my-lg-0">
+                <div class="d-flex align-items-center mx-4 my-3 justify-content-center justify-content-lg-start">
+                    <div style="font-size: 56px" class="ml-4">
+                        <i class="far fa-book"></i>
+                    </div>
+                    <div class="">
+                        <p class="mylead">کتاب رایگان</p>
+                        <a href="" class="text-dark "
+                        ><h6>
+                            اصطلاحات بازاریابی دیجیتال
+                            <a href="#"><i class="far fa-download"></i></a></h6
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 my-2 my-lg-0">
+                <div class="d-flex align-items-center mx-4 my-3 justify-content-center justify-content-lg-start">
+                    <div style="font-size: 56px" class="ml-4">
+                        <i class="far fa-book"></i>
+                    </div>
+                    <div class="">
+                        <p class="mylead">کتاب رایگان</p>
+                        <a href="" class="text-dark "
+                        ><h6>
+                            اصطلاحات بازاریابی دیجیتال
+                            <a href="#"><i class="far fa-download"></i></a></h6
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 my-2 my-lg-0">
+                <div class="d-flex align-items-center mx-4 my-3 justify-content-center justify-content-lg-start">
+                    <div style="font-size: 56px" class="ml-4">
+                        <i class="far fa-book"></i>
+                    </div>
+                    <div class="">
+                        <p class="mylead">کتاب رایگان</p>
+                        <a href="" class="text-dark "
+                        ><h6>
+                            اصطلاحات بازاریابی دیجیتال
+                            <a href="#"><i class="far fa-download"></i></a></h6
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  service intoduction section  ==========--->
+
+    <div class="bg-light">
+        <div class="container my-4">
+            <div class="row">
+                <!-- service-title/btn -->
+
+                <div class="container py-5">
+                    <div class="heading d-flex justify-content-between flex-column text-center flex-lg-row text-lg-right mt-5 mb-4">
+                        <div>
+                            <h4>خدمات مدرن مارکتینگ</h4>
+                            <p class="mylead">آمادۀ رشد کسب و کارتان هستید؟</p>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-danger btn-heading btn-defualt-red">تمامی خدمات</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- services--->
+
+                <div class="container pb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">تبلیغات گوگل</h5>
+                                <p class="mylead m-0">حضور در رتبه های اول گوگل</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">طراحی سایت</h5>
+                                <p class="mylead m-0">طراحی وبسایت اختصاصی</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">سئو</h5>
+                                <p class="mylead m-0">بهبود جایگاه شما در نتایج جستجو</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">تولید محتوا</h5>
+                                <p class="mylead m-0">نقشه راه بازاریابی تولید محتوا</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">مشاوره</h5>
+                                <p class="mylead m-0">مشاوره بازاریابی و برندینگ دیجیتال</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">هاستینگ</h5>
+                                <p class="mylead m-0">قرار دادن وبسایت در دسترس کاربران</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">تبلیغات ایمیلی</h5>
+                                <p class="mylead m-0">بازاریابی و تبلیغات ایمیلی</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 text-center my-3 pb-5">
+                            <div class="bg-white py-3 service-cards">
+                                <h5 class="">رپورتاژ خبری</h5>
+                                <p class="mylead m-0">شناخته شدن و افزایش رتبۀ گوگل</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  company logo icons section  ==========--->
+
+    <!-- slider -->
+
+    <div class="container light-bg logos my-5">
+        <div class="swiper-container swiper1 light-bg">
+            <div class="swiper-wrapper light-bg">
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+                <div class="swiper-slide bg-light">
+                    <img src="img/digikala.png" alt="digikala" class="img-fluid" width="135"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  customer opinions section  ==========--->
+
+    <!-- slider -->
+
+    <div class="container">
+        <div class="swiper-container swiper2">
+            <div class="d-flex flex-column text-center">
+                <h2 class="text-dark">آنچه مشتریان ما میگویند</h2>
+                <p class="mylead">نظر شما دربارۀ دوره‌ها و خدمات ‌های مدرن مارکتینگ</p>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/client.png" class="mt-4 img-fluid rounded-circle" alt="client"/>
+                        <p class="mylead opinion mt-3 mb-3">
+                            همکاری با شرکت حرفه ای مدرن مارکتینگ،یکی از تجربه های خوب شرکت یکتابوک بود.تخصص، دقت و سرعت
+                            پاسخگویی جزو ویژگی های این شرکت است. دانش و مهارت پیاده سازی آن و گرفتن نتایج مورد انتظار
+                            برای هداف تعیین شده
+                            از گزینه هایی بود که سبب ادامه همکاری یکتابوک با مدرن مارکتینگ شد.
+                        </p>
+                        <h5>حسام موسوی</h5>
+                        <p class="mylead">یکتابوک</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/client.png" class="mt-4 img-fluid rounded-circle" alt="client"/>
+                        <p class="mylead opinion mt-3 mb-3">
+                            همکاری با شرکت حرفه ای مدرن مارکتینگ،یکی از تجربه های خوب شرکت یکتابوک بود.تخصص، دقت و سرعت
+                            پاسخگویی جزو ویژگی های این شرکت است. دانش و مهارت پیاده سازی آن و گرفتن نتایج مورد انتظار
+                            برای هداف تعیین شده
+                            از گزینه هایی بود که سبب ادامه همکاری یکتابوک با مدرن مارکتینگ شد.
+                        </p>
+                        <h5>حسام موسوی</h5>
+                        <p class="mylead">یکتابوک</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <img src="img/client.png" class="mt-4 img-fluid rounded-circle" alt="client"/>
+                        <p class="mylead opinion mt-3 mb-3">
+                            همکاری با شرکت حرفه ای مدرن مارکتینگ،یکی از تجربه های خوب شرکت یکتابوک بود.تخصص، دقت و سرعت
+                            پاسخگویی جزو ویژگی های این شرکت است. دانش و مهارت پیاده سازی آن و گرفتن نتایج مورد انتظار
+                            برای هداف تعیین شده
+                            از گزینه هایی بود که سبب ادامه همکاری یکتابوک با مدرن مارکتینگ شد.
+                        </p>
+                        <h5>حسام موسوی</h5>
+                        <p class="mylead">یکتابوک</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Arrows -->
+
+            <div class="swiper-button-next text-dark d-none d-lg-block"></div>
+            <div class="swiper-button-prev text-dark d-none d-lg-block"></div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-danger btn-heading my-5 btn-defualt-red">نمونه کار ها</button>
+        </div>
+    </div>
+
+    <!--==========  articles section  ==========--->
+
+    <div class="light-bg">
+        <div class="container mt-4">
+            <div class="row">
+                <!-- article-title/btn -->
+
+                <div class="container">
+                    <div class="heading d-flex justify-content-between flex-column text-center flex-lg-row text-lg-right mt-5 mb-4">
+                        <div>
+                            <h4>آخرين مقالات</h4>
+                            <p class="mylead">دانش خود را ارتقا دهيد</p>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-danger btn-heading btn-defualt-red">تمامی مقالات</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- articles -->
+
+                <div class="col-12 col-md-4 card-mw-course">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top img-fluid" src="img/article.jpg" alt="Card image cap"/>
+                        <div class="card-body">
+                            <h5 class="text-center mb-2">ساخت کسب و کار اینترنتی موفق</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="my-1">
+                                    <p class="mylead article-subject">سئو و بهینه سازی سایت</p>
+                                </div>
+                                <div>
+                                    <div class="text-left ml-2 my-2 star-icons">
+                                        <!-- <i class="fa fa-star"></i> -->
+                                        <p class="mylead article-subject">10 دقیقه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text text-right mylead">چگونه می‌توانید یک کسب‌وکار اینترنتی راه‌اندازی کنید
+                                که موفقیت آن حتمی باشد؟ در این کتاب، همه‌چیز را به شما خواهیم گفت.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <i class="far fa-comments text-muted mt-1"></i>
+                                    <small class="text-muted mx-1">78</small>
+                                </div>
+                                <div class="mt-1">
+                                    <i class="far fa-heart text-muted mx-2"></i>
+                                    <i class="far fa-bookmark text-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 card-mw-course">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top img-fluid" src="img/article.jpg" alt="Card image cap"/>
+                        <div class="card-body">
+                            <h5 class="text-center mb-2">ساخت کسب و کار اینترنتی موفق</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="my-1">
+                                    <p class="mylead article-subject">سئو و بهینه سازی سایت</p>
+                                </div>
+                                <div>
+                                    <div class="text-left ml-2 my-2 star-icons">
+                                        <!-- <i class="fa fa-star"></i> -->
+                                        <p class="mylead article-subject">10 دقیقه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text text-right mylead">چگونه می‌توانید یک کسب‌وکار اینترنتی راه‌اندازی کنید
+                                که موفقیت آن حتمی باشد؟ در این کتاب، همه‌چیز را به شما خواهیم گفت.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <i class="far fa-comments text-muted mt-1"></i>
+                                    <small class="text-muted mx-1">78</small>
+                                </div>
+                                <div class="mt-1">
+                                    <i class="far fa-heart text-muted mx-2"></i>
+                                    <i class="far fa-bookmark text-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 card-mw-course mb-5">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top img-fluid" src="img/article.jpg" alt="Card image cap"/>
+                        <div class="card-body">
+                            <h5 class="text-center mb-2">ساخت کسب و کار اینترنتی موفق</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="my-1">
+                                    <p class="mylead article-subject">سئو و بهینه سازی سایت</p>
+                                </div>
+                                <div>
+                                    <div class="text-left ml-2 my-2 star-icons">
+                                        <!-- <i class="fa fa-star"></i> -->
+                                        <p class="mylead article-subject">10 دقیقه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text text-right mylead">چگونه می‌توانید یک کسب‌وکار اینترنتی راه‌اندازی کنید
+                                که موفقیت آن حتمی باشد؟ در این کتاب، همه‌چیز را به شما خواهیم گفت.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <i class="far fa-comments text-muted mt-1"></i>
+                                    <small class="text-muted mx-1">78</small>
+                                </div>
+                                <div class="mt-1">
+                                    <i class="far fa-heart text-muted mx-2"></i>
+                                    <i class="far fa-bookmark text-muted"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==========  footer section  ==========--->
+
+    <footer>
+        <div class="dark-bg">
+            <div class="container pb-4">
+                <div class="row pt-5">
+                    <div class="col-md-4 col-xl-3 text-center text-xl-right">
+                        <ul class="list-unstyled">
+                            <li class="my-2">
+                                <a href="#" class="text-light ">
+                                    <div class="d-flex justify-content-center justify-content-xl-start">
+                                        <img src="img/logo-b.png" class="img-bottom-logo" alt=""/>
+                                        <h6 class="text-light mt-2 mr-2 mb-0">مدرن مارکتینگ</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <p class="mylead p-footer-mt"><i class="fa fa-map-marker-alt ml-2"
+                                                                 aria-hidden="true"></i>طالقانی . خیابان بهشتی . پلاک 44
+                                </p>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <p class="mylead"><i class="fa fa-phone ml-2" aria-hidden="true"></i>021-345437</p>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <p class="mylead"><i class="fa fa-envelope ml-2" aria-hidden="true"></i>info@modern-marketing.com
+                                </p>
+                            </li>
+                            <div class="mt-0 mt-lg-4 mr-2 mr-lg-0">
+                                <button class="btn btn-secondary btn-contact mx-1">درباره ما</button>
+                                <button class="btn btn-secondary btn-contact mx-1">تماس با ما</button>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-xl-3 text-center text-xl-right mt-3 mt-md-0">
+                        <ul class="list-unstyled">
+                            <li class="my-2">
+                                <a href="#" class="text-light">
+                                    <div class="d-flex justify-content-center justify-content-xl-start">
+                                        <h6 class="text-light mt-2 mr-2">خدمات دیجیتال</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">مشاوره برندینگ و بازاریابی
+                                    دیجیتال</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">رپورتاژ خبری</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">طراحی فروشگاه اینترنتی</p>
+                                </a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">بهینه سازی تجربه کاربری</p>
+                                </a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">تبلیغات بنری</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">بازاریابی شبکه های
+                                    اجتماعی</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">راه‌اندازی ویپ(تلفن گویا)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-xl-3 text-center text-xl-right mt-n5 mt-md-2">
+                        <ul class="list-unstyled mt-5">
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">تبلیغات در گوگل</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">طراحی وبسایت</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">سئو به بهینه سازی سایت</p>
+                                </a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">تبلیغات ایمیلی</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">تبلیغات پیامکی</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">تولید محتوای سایت</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">نمونه کار ها</p></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xl-3">
+                        <ul class="list-unstyled">
+                            <li class="my-2">
+                                <a href="#" class="text-light">
+                                    <div class="d-flex">
+                                        <h6 class="text-light mt-2 mr-2">دسترسی ها</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">بلاگ</p></a>
+                            </li>
+                            <li class="mr-1 text-light">
+                                <a href="#" class=""><p class="mylead">قوانین و مقررات</p></a>
+                            </li>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h6 class="text-light mt-2 mr-2">با ما همراه باشید</h6>
+                                <div class="mt-1">
+                                    <a href="#" class="social-media-icons"><i class="fab fa-twitter mx-1"
+                                                                              aria-hidden="true"></i></a>
+                                    <a href="#" class="social-media-icons"><i class="fab fa-instagram mx-1"
+                                                                              aria-hidden="true"></i></a>
+                                    <a href="#" class="social-media-icons"><i class="fab fa-facebook mx-1"
+                                                                              aria-hidden="true"></i></a>
+                                    <a href="#" class="social-media-icons"><i class="fab fa-telegram mx-1"
+                                                                              aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="newsletter">
+                                <input class="form-control shadow-none" type="text" name="" id=""
+                                       placeholder="پست الکترونیکی"/>
+                                <button class="btn btn-sm btn-danger btn-default-red shadow-none">اشتراک</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bt-footer p-3 text-center bg-darker">
+                <p>تمامی حقوق مادی و معنوی این وبسایت متعلق به مدرن مارکتینگ می باشد و هرگونه کپی برداری پیگرد قانونی
+                    دارد.</p>
+                <p style="font-size: 14px">
+                    Developed by
+                    <a href="erfanansari.com" class="text-white">Erfan Ansari</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"-->
+<!--        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>-->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

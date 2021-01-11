@@ -47,7 +47,7 @@ $(document).ready(function () {
     BTNHEADER1.classList.toggle("bg-blur");
     BTNHEADER2.classList.toggle("bg-blur");
     NAVLINKS.forEach(function (link, index) {
-      if (link.style.animation == "") {
+      if (link.style.animation === "") {
         // link.style.background = "";
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
       } else {

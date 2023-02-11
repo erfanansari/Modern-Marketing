@@ -1,1 +1,1 @@
-# Just a test website for practicing purposes
+# Just a test website for practicing purposes.
